@@ -1,0 +1,48 @@
+ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+ul.main {
+    background-color: #f50;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+ul.main > li {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    height: 4rem;
+    transition: all 0.4s;
+    line-height: 1.4;
+}
+
+ul.main > li:hover {
+    background-color: #f80;
+}
+
+li > ul {
+    padding-top: 0.6rem;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.3rem;
+    transition: all 0.4s;
+}
+
+li:hover > ul {
+    transform: translateY(1rem);
+    opacity: 100%;
+    visibility: initial;
+}
+
+li > ul > li {
+    padding-top: 0.1rem;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+    color: initial;
+}
